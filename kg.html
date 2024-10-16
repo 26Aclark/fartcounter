@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="counter">0</div><div> times farted</div>
+    <div id="butt-ton"></div>
+</body>
+    <script>
+        let counter = 0;
+        function buttton() {
+        counter ++;
+        document.getElementById('counter').innerText = counter;
+    };
+    function play() {
+        var sound = new Audio('fart.wav');
+        sound.cloneNode().play();
+    }
+    document.getElementById('butt-ton').addEventListener('click', function(){
+    buttton();
+    play();
+});
+    </script>
+<style>
+#butt-ton {
+    background-image: url('https://www.shutterstock.com/image-illustration/cartoon-butt-drawing-fart-cloud-600nw-1762958210.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    font-size: 2rem;
+    user-select: none;
+    position: absolute;
+    top: calc();
+    left: calc();
+    cursor: pointer;
+}
+</style>
+</html>
