@@ -6,7 +6,7 @@
 </head>
 <body>
     <div id="counter">0</div><div> times farted</div>
-    <div id="butt-ton"></div>
+    <div id="butt-ton" onclick="run()"></div>
 </body>
     <script>
         let counter = 0;
@@ -18,10 +18,10 @@
         var sound = new Audio('fart.wav');
         sound.cloneNode().play();
     }
-    document.getElementById('butt-ton').addEventListener('click', function(){
+    function run(){
     buttton();
     play();
-});
+};
     </script>
 <style>
 #butt-ton {
